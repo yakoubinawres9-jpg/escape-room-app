@@ -1,0 +1,236 @@
+/* --- Existing Vite default styles --- */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* --- Escape Room styles --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #5a2a83, #b67ee5);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.game-container {
+  margin-top: 50px;
+}
+/* Style dropdowns for theme and difficulty */
+select {
+  background-color: #4caf50; /* light green */
+  color: white;              /* white text */
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+select:hover {
+  background-color: #45a049; /* slightly darker green on hover */
+}
+/* Style labels for theme and difficulty */
+.label-with-emoji {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;            /* space between emoji and text */
+  font-size: 16px;      /* adjust to match dropdown height */
+  font-weight: bold;
+  color: white;
+}
+
+
+
+/* --- Riddle Card --- */
+.riddle-card {
+  border: 2px solid rgba(255, 255, 255, 0.559);
+  border-radius: 16px;
+  padding: 25px;
+  width: 450px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.515);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.riddle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+/* --- Riddle Text --- */
+.riddle-text {
+  min-height: 80px;
+  font-size: 18px;
+  margin: 15px 0;
+  color: rgb(74, 37, 221); /* readable black text on light card */
+  font-weight: 600;
+}
+
+/* --- Input --- */
+.riddle-input {
+  padding: 12px;
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-size: 1em;
+}
+
+/* --- Button Group --- */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* --- Buttons --- */
+.btn {
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(213, 23, 204, 0.601);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+/* --- Submit / Default Button --- */
+.btn.submit {
+  background: #8a2be2;
+  color: #fff;
+}
+
+.btn.submit:hover {
+  background: #a65cf5;
+}
+
+/* --- Hint Button --- */
+.btn.hint {
+  background: #f39c12;
+  color: #fff;
+}
+
+.btn.hint:hover {
+  background: #e67e22;
+}
+
+/* --- Message --- */
+.message {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* --- Progress Bar --- */
+.progress-bar {
+  background: #ddd;
+  border-radius: 6px;
+  width: 300px;
+  height: 10px;
+  margin: 15px auto;
+}
+
+.progress {
+  background: #8a2be2;
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+/* --- Timer & Lives --- */
+.timer-lives {
+  font-size: 1.2em;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #fff9;
+}
+
+/* --- Victory Screen --- */
+.victory-screen h2 {
+  font-size: 2em;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 10px #000;
+}
+
+.victory-screen button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  background: #8a2be2;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.victory-screen button:hover {
+  background: #a65cf5;
+  transform: scale(1.05);
+}
+
+/* Horizontal label + dropdown styling */
+.label-select {
+  display: flex;            /* stack elements vertically */
+  flex-direction: column;   /* column layout */
+  align-items: flex-start;  /* left-align label + dropdown */
+  gap: 5px;                 /* space between label and dropdown */
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.label-select select {
+  background: #4caf50;      /* green like your buttons */
+  color: white;             /* dropdown text white */
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.label-select select:hover {
+  background: #45a049;      /* hover effect like buttons */
+}
+.status-bar {
+  display: flex;
+  justify-content: center; /* centers items horizontally */
+  align-items: center; 
+  gap: 20px;               /* space between timer and lives */
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;            /* text color */
+}

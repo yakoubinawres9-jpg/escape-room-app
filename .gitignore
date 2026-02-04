@@ -1,0 +1,5 @@
+# Ignore the nested Git repo
+escape-room-api/.git
+
+# Ignore node_modules folders
+node_modules/
